@@ -5,5 +5,5 @@ def call() {
 	def currentJob = Jenkins.instance.getItemByFullName(jobName)
 
 	def stoppedBuild = false
-    out.println(jobName)
+    steps.println("trupti")
 }
