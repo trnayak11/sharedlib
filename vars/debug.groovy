@@ -5,6 +5,5 @@ def call() {
 
 	def stoppedBuild = false
     sh "echo hello trupti"
-    sh "echo ${jobName}"
 
 }
