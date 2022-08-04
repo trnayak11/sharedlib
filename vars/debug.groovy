@@ -7,4 +7,6 @@ def call() {
 
 	def stoppedBuild = false
     echo "${jobName}"
+    echo "${buildNumber}"
+    echo "${currentJob}"
 }
