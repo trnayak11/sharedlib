@@ -5,3 +5,5 @@ def call() {
 
 	def stoppedBuild = false
     sh "echo $jobName"
+
+}
