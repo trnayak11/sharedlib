@@ -4,6 +4,7 @@ def call() {
 	def currentJob = Jenkins.instance.getItemByFullName(jobName)
 
 	def stoppedBuild = false
-    println(jobName)
+    sh "echo hello trupti"
+    sh "echo ${jobName}"
 
 }
