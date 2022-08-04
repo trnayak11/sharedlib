@@ -13,8 +13,3 @@ def call(Map params){
     }
     echo "second call called"
 }
-
-def call(){
-    //call(null)
-    echo "third call called"
-}
