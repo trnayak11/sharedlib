@@ -1,13 +1,15 @@
-def call() {
-	
-    def jobName = env.JOB_NAME
-    //def jobName = "newjob"
-	def buildNumber = env.BUILD_NUMBER.toInteger()
-	def currentJob = Jenkins.instance.getItemByFullName(jobName)
-    def stat = currentBuild.currentResult
-	def stoppedBuild = false
-    echo "${jobName}"
-    echo "${buildNumber}"
-    echo "${currentJob}"
-    echo "${stat}"
+def call(){
+    call(null)
+    echo "first call called"
+}
+
+def call(Map params){
+    if (params == null){
+        params = [:]
+    }
+    params.status = 'INPROGRESS'
+    else{
+        echo "params caught"
+    }
+    echo "second call called"
 }
