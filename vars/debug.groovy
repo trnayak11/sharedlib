@@ -1,5 +1,5 @@
 def call(){
-    call(null)
+    call(experience:8,name:"trupti")
     echo "first call called"
 }
 
