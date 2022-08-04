@@ -1,3 +1,4 @@
 def call(Map config = [:]){
-    sh "echo ${config.name} has ${config.experience} years of experience"
+    scriptLoad(name: 'script.sh')
+    sh "./script.sh ${config.name} ${config.experience}"
 }
